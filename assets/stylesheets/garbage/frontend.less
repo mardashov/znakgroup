@@ -1,0 +1,93 @@
+@color_1: #ffffff;
+@color_2: #267481;
+@color_3: #6a7083;
+@font-family_1: "Open Sans", sans-serif;
+
+* {
+	&: before, &:after { box-sizing: border-box;
+}
+} {
+	html {
+		font-size: 62.5%;
+	}
+	a {
+		color: @color_2;
+		text-decoration: none;
+	}
+	.cd-section {
+		&: first-of-type { & > div { background-color: #2b334f;
+	}
+	} {
+		.cd-section {
+			&: first-of-type { & > div { &:before { content: 'Effects not visible on mobile!';
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			top: 20px;
+			z-index: 2;
+			font-weight: bold;
+			font-size: 1.3rem;
+			text-transform: uppercase;
+			color: @color_3;
+			&: nth-of-type(3) { & > div { background-color: #2e5367;
+			&: nth-of-type(4) { & > div { background-color: #2e5367;
+			&: nth-of-type(5) { & > div { background-color: #2e5367;
+		}
+		} {
+			.cd-section {
+				&: nth-of-type(2) { & > div { background-color: #2e5367;
+			}
+		}
+		.cd-vertical-nav {
+			position: fixed;
+			z-index: 1;
+			right: 3%;
+			top: 50%;
+			bottom: auto;
+			-webkit-transform: translateY(-50%);
+			-moz-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			-o-transform: translateY(-50%);
+			transform: translateY(-50%);
+			display: none;
+			a { &.inactive { visibility: hidden;
+			opacity: 0;
+			-webkit-transition: opacity 0.2s 0s, visibility 0s 0.2s;
+			-moz-transition: opacity 0.2s 0s, visibility 0s 0.2s;
+			transition: opacity 0.2s 0s, visibility 0s 0.2s;
+		}
+	}
+	.cd-vertical-nav {
+		a { &.cd-prev { -webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		transform: rotate(180deg);
+		margin-bottom: 10px;
+	}
+}
+body {
+	font-size: 1.6rem;
+	font-family: @font-family_1;
+	color: @color_1;
+	background-color: #22283f;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	&: before { content: 'mobile';
+	display: none;
+}
+.cd-section {
+	height: 100vh;
+	h2 { line-height: 100vh;
+	text-align: center;
+	font-size: 2.4rem;
+}
+.cd-vertical-nav {
+	a { display: block;
+	height: 40px;
+	width: 40px;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	background: url(../img/cd-icon-arrow.svg) no-repeat center center;
+}

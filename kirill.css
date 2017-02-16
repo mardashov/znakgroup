@@ -1,0 +1,36 @@
+.odometer{
+	margin-right: 5px;
+}
+.section--project .step {
+    height: 80% !important;
+    top: 60% !important;
+}
+
+.section .step__description {
+    font-family: 'PlumbLight', sans-serif !important;
+}
+.countTo{
+	margin-right: 10px !important;
+}
+.project_name_full_page{
+	color: #ffc734 !important;
+
+}
+.section .step__description {
+	font-size: 18px !important;
+	line-height: 25px !important;
+}
+.page-land-aria{
+     background: "http://192.168.0.55/prod/assets/images/news/land-list-1.jpg"!important;
+     background-image: url("http://192.168.0.55/prod/assets/images/news/land-list-1.jpg") !important;
+     background-image: url(http://192.168.0.55/prod/assets/images/news/land-list-1.jpg) !important;
+     
+}
+.step__button{
+     background: none !important;
+}
+
+.about-companu-text{
+    width: 75%;
+    margin-top: 15px;
+}
