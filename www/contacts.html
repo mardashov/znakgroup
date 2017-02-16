@@ -1,0 +1,104 @@
+<!DOCTYPE html> 
+<!--[if IE 8 ]>
+	<html class="ie8" lang="ru-RU">
+<![endif]-->
+<!--[if IE 9 ]>
+	<html class="ie9" lang="ru-RU">
+<![endif]-->
+<!--[if gt IE 9]>
+	<html lang="ru-RU">
+<![endif]-->
+<!--[if !IE]><!--><html lang="ru-RU"><!--<![endif]-->
+    <head>
+    	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    	<meta content="width=device-width, initial-scale=1.0" name="viewport" />		
+        <title>Группа компаний  "Знак"</title>
+		<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+		<!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />-->
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/animations.css" />
+		<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" />
+		<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet/less" type="text/css" href="assets/stylesheets/frontend-w.less?ver=4" />
+		<link rel="stylesheet/less" type="text/css" href="assets/stylesheets/media-w.less?ver=4" />
+    </head>	
+	<body class="body body--contacts">
+		<div class="contacts">
+			<div class="contacts-item contacts-item--logo">
+				<a href="/prod"><img src="assets/images/logo.png" alt="logo" title="" /></a>
+			</div>
+			<div class="contacts-item contacts-item--address">
+				<h2>Адрес компании:</h2>
+				<div class="contacts-item__description contacts-item__description--address">
+					Красногорский район, д. Путилково, <br />Бизнес-парк Гринвуд, стр. 23 <br />143441, Россия, 69 км. МКАД, <br />Московская область
+				</div>
+			</div>
+			<div class="contacts-item contacts-item--phone">
+				<h2>Телефон:</h2>
+				<div class="contacts-item__description contacts-item__description--phone">
+					<a href="tel:+74952322717">+7 (495) 232-27-17</a>
+					<a href="tel:+74952322717">+7 (495) 232-27-16 (факс)</a>
+				</div>				
+			</div>
+			<div class="contacts-item contacts-item--email">
+				<h2>Электронная почта:</h2>
+				<div class="contacts-item__description contacts-item__description--email">
+					<a href="mailto:info@znak-co.ru">info@znak-co.ru</a>
+				</div>
+			</div>
+			<div class="contacts-item contacts-item--socials">
+				<a href="#" class="socials socials--vk"></a>
+				<a href="#" class="socials socials--fb"></a>
+				<a href="#" class="socials socials--ig"></a>
+				<a href="#" class="socials socials--tw"></a>
+			</div>
+		</div>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyuWgVLaMkY0lSevW3LSLfYV5uyxvkxdU"></script>        
+		<script type="text/javascript">
+			// When the window has finished loading create our google map below
+			google.maps.event.addDomListener(window, 'load', init);
+			
+			function init() {
+				// Basic options for a simple Google Map
+				// For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+				var mapOptions = {
+					// How zoomed in you want the map to start at (always required)
+					zoom: 15,
+					
+					// The latitude and longitude to center the map (always required)
+					center: new google.maps.LatLng(55.864570258260905,37.39328855554198), // Moscow
+
+					// How you would like to style the map. 
+					// This is where you would paste any style found on Snazzy Maps.
+					styles: [{"featureType":"administrative","elementType":"all","stylers":[{"saturation":"-100"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","elementType":"all","stylers":[{"saturation":-100},{"lightness":"50"},{"visibility":"simplified"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":"-100"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"lightness":"30"}]},{"featureType":"road.local","elementType":"all","stylers":[{"lightness":"40"}]},{"featureType":"transit","elementType":"all","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]},{"featureType":"water","elementType":"labels","stylers":[{"lightness":-25},{"saturation":-100}]}]
+				};
+
+				// Get the HTML DOM element that will contain your map 
+				// We are using a div with id="map" seen below in the <body>
+				var mapElement = document.getElementById('map');
+
+				// Create the Google Map using our element and options defined above
+				var map = new google.maps.Map(mapElement, mapOptions);
+
+				// Let's also add a marker while we're at it
+				var marker = new google.maps.Marker({
+					
+					position: new google.maps.LatLng(55.864570258260905,37.39328855554198),
+					map: map,
+					title: 'Snazzy!'
+				});
+			}
+		</script>
+		<div class="map__wrapper">
+			<div id="map" class="map"></div>
+		</div>
+    </body>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+	<script src="assets/javascripts/modernizr.js"></script> 
+	<script src="assets/javascripts/frontend-w.js?ver=4"></script>
+    <!--[if lt IE 9]>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</html>

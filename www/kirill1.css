@@ -1,0 +1,8 @@
+.section--project .project__photo{
+	border: none !important;
+
+}
+
+.section--project .project__photo-item:after{
+	background: none !important;
+}
